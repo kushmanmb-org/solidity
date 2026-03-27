@@ -41,9 +41,13 @@ function solcjs_test
 
     printLog "Updating index.js file..."
     echo "require('./determinism.js');" >> test/index.js
+    echo "require('./contract.js');" >> test/index.js
 
     printLog "Copying determinism.js..."
     cp -f "$SOLCJS_INPUT_DIR/determinism.js" test/
+
+    printLog "Copying contract.js..."
+    cp -f "$SOLCJS_INPUT_DIR/contract.js" test/
 
     printLog "Copying contracts..."
     cp -Rf "$SOLCJS_INPUT_DIR/DAO" test/
