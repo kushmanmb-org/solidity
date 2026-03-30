@@ -8,6 +8,8 @@ We appreciate your efforts and responsible disclosure and will make every effort
 Bugs in the Solidity repository are in scope.
 Bugs in third-party dependencies e.g., jsoncpp, boost etc. are not in scope unless they result in a Solidity specific bug.
 
+This repository does not contain an npm-managed JavaScript package or lockfile, so commands like `npm audit fix --force` are not applicable here. JavaScript package security updates should be handled in the dedicated `solc-js` repository.
+
 Only bugs that have a demonstrable security impact on smart contracts are in scope.
 For example, a Solidity program whose optimization is incorrect (e.g., leads to an incorrect output) qualifies as a security bug.
 Please note that the [rules][2] of the [Ethereum bounty program][1] have precedence over this security policy.
